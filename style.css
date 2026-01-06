@@ -1,0 +1,215 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3e6e6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.navbar input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+/* ================= TOP NAV ================= */
+.top-nav {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    gap: 18px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.top-nav span {
+    cursor: pointer;
+}
+
+.top-nav span:hover {
+    text-decoration: underline;
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    background-color: #d6f06a;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text .small {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+/* ================= INFO BAR ================= */
+.info-bar {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.info-bar a {
+    color: #007185;
+}
+
+/* ================= CARDS ================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ================= GRID INSIDE CARDS ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid img,
+.big-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.grid p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.rating {
+    color: #f8d211;
+    margin: 5px 0;
+}
+
+.product button {
+    background: #ffd814;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}

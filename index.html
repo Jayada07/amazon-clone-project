@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+    <div class="logo">amazon</div>
+
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="Search products"
+        aria-label="Search products"
+    >
+
+    <div class="cart">
+        🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+</header>
+
+<!-- ================= TOP NAV ================= -->
+<nav class="top-nav">
+    <span>☰ All</span>
+    <span class="brand">Rufus</span>
+    <span>Today's Deals</span>
+    <span>Prime Video</span>
+    <span>Buy Again</span>
+    <span>Customer Service</span>
+    <span>Registry</span>
+    <span>Gift Cards</span>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <button class="arrow left" aria-label="Previous slide" onclick="prevSlide()">❮</button>
+
+    <div class="hero-text" id="hero-text">
+        <p class="small">Make 2026 your year</p>
+        <h1>New Year’s deals<br>just dropped</h1>
+    </div>
+
+    <button class="arrow right" aria-label="Next slide" onclick="nextSlide()">❯</button>
+</section>
+
+<!-- ================= INFO BAR ================= -->
+<div class="info-bar">
+    You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+    <a href="#" target="_blank">Click here to go to amazon.in</a>
+</div>
+
+<!-- ================= CATEGORY CARDS ================= -->
+<section class="cards">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <h2>Shop for your home essentials</h2>
+
+        <div class="grid">
+            <div>
+                <img src="image/cleaning.png" alt="Cleaning tools">
+                <p>Cleaning Tools</p>
+            </div>
+            <div>
+                <img src="image/organiser.png" alt="Home storage">
+                <p>Home Storage</p>
+            </div>
+            <div>
+                <img src="image/clock.png" alt="Clock">
+                <p>Clock</p>
+            </div>
+            <div>
+                <img src="image/bedding.png" alt="Bedding">
+                <p>Bedding</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <h2>Get your game on</h2>
+        <img 
+            class="big-img" 
+            src="image/game.png" 
+            alt="Gaming setup">
+        <img 
+            class="big-img" 
+            src="image/game2.jpg" 
+            alt="Gaming setup">
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <h2>Refresh your space</h2>
+
+        <div class="grid">
+            <div>
+                <img src="image/dinning.png" alt="Dining room">
+                <p>Dining</p>
+            </div>
+            <div>
+                <img src="image/kitchen.png" alt="Kitchen">
+                <p>Kitchen</p>
+            </div>
+            <div>
+                <img src="image/skincare.png" alt="Health and beauty">
+                <p>Health & Beauty</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS (FOR JS) ================= -->
+<section class="products" id="product-list">
+    <!-- Products will be injected by JavaScript -->
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>
+        Amazon Clone project by Jayada
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
